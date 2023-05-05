@@ -1,0 +1,50 @@
+.date{
+    height: 70vh;
+    position: relative;
+}
+
+.date>img{
+    width: 50vw;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card_exp>P>span{
+    font-weight: bold;
+}
+
+.logo{
+  height: 70px;
+}
+
+@media  screen and (max-width:768px) { 
+    header{
+      width: 100vw;
+      height: 10vh;
+      position: relative;
+    }
+    .menu-contents{
+      display: none;
+    }
+    .icon{
+      display: none;
+    }
+  
+    .hamburger{
+      display: block;
+      position: absolute;
+      right: 20px;
+    }
+
+    .date{
+        height: 45vh;
+    }
+    .date>img{
+        width: 80vw;
+    }
+  .logo{
+    height: 10vh;
+  }
+  }

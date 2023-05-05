@@ -1,0 +1,401 @@
+header{
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color:#000;
+    z-index: 4;
+}
+.logo{
+    height: 70px;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.menu-contents{
+    display: flex;
+    align-items: center;
+}
+
+.menu-contents>li{
+    color: aliceblue;
+    margin: 20px;
+   
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media  screen and (max-width:768px) { 
+  header{
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+  }
+  .logo{
+    height: 10vh;
+  }
+  .menu-contents{
+    display: none;
+  }
+  .icon{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+
+  .header_scroll{
+    transform: translateY(-100%); /*ヘッダーを上にスクロールするクラス*/
+  }
+
+    }
+
+
+
+.title{
+    color: #fff;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.sns{
+    margin: 8px;
+    color: white;
+}
+.top-page{
+    position: relative;
+}
+
+.slideshow {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideshow 10s infinite;
+    
+  }
+  
+  .slideshow img {
+    display: none;
+  }
+  
+  @keyframes slideshow {
+    0% { background-image: url(../img/kochi1.jpeg); }
+    33.33% { background-image: url(../img/kobe2.jpg); }
+    66.66% { background-image: url(../img/shinkan5.jpg); }
+    100% { background-image: url(../img/2022-06-10_18-49-03_280.jpeg); }
+  }
+@media screen {
+  .top-page{
+    padding-top: 10vh;
+
+  }
+  .slideshow{
+    padding-top: 10vh;
+  }
+  
+}
+  .main-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:500%;
+  text-align:center;
+  color: #fff;
+  text-shadow: 1px #000;
+  -webkit-text-stroke: 1px #000;
+  font-family: 'Zen Antique', serif;
+  font-family:serif;
+  }
+@media  screen and (max-width:768px) {
+  .top-page{
+    width: 100vw;
+    height: 30vh;
+  }
+  .slideshow{
+    width: 100vw;
+    height: 30vh;
+  }
+  .main-title{
+    width: 300px;
+    font-size: 50px;
+    top: 25%;
+  }
+  
+}
+  #about-us{
+    width: 100vw;
+    padding-bottom: 0;
+  }
+
+  .section{
+    padding: 20px;
+  }
+
+  
+  
+  .title1{
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    position:  relative;        /* 位置調整 */
+    font-weight:  normal;       /* 文字の太さ調整 */
+    font-size: 40px; 
+    color: #000;           /* 文字サイズ指定 */
+    text-align:  center;        /* 文字位置指定 */
+    margin:  20px 0;            /* 周りの余白指定 */
+    display: inline-block;      /* インラインブロックにする */
+  }
+
+  .title1:before {
+    content: '';                /* 空の要素を作る */
+    height: 30px;               /* 高さ指定 */
+    width: 60px;                /* 幅指定 */
+    border: solid 1px #ccc;     /* 枠線指定 */
+    display:  block;            /* ブロック要素にする */
+    position:  absolute;        /* 位置調整 */
+    left:  0;                   /* 位置調整 */
+    top: 0;                     /* 位置調整 */
+    margin:  auto;              /* 位置調整 */
+    z-index: -1;                /* 重なり調整 */
+}
+.title1:after {
+    content: '';                /* 空の要素を作る */
+    height: 80px;               /* 高さ指定 */
+    width: 80px;                /* 幅指定 */
+    border: solid 1px #ccc;     /* 枠線指定 */
+    display:  block;            /* ブロック要素にする */
+    position:  absolute;        /* 位置調整 */
+    right:  0;                  /* 位置調整 */
+    bottom:  0;                 /* 位置調整 */
+    margin:  auto;              /* 位置調整 */
+    z-index: -1;                /* 重なり調整 */
+}
+ 
+.title-wrap {
+    padding-bottom:  20px;      /* 余白指定 */
+    text-align:  center;        /* 文字位置指定 */
+}
+
+.contents{
+    display: flex;
+}
+.whatIsOdosamu1{
+    display: flex;
+    
+}
+.whatIsOdosamu2{
+    display: flex;
+}
+
+.whatIsOdosamu1>p{
+    width: 50vw;
+    height: 35vh;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+   
+}
+
+  .whatIsOdosamu1>img{
+   width: 40vw;
+  }
+
+  .naruko{
+    height: 255px;
+    margin-left: 150px;
+    margin-bottom: 40px;
+    margin-top: -50px;
+  }
+
+  .kobe2{
+    margin:100px;
+    margin-left: 140px;
+    height: 200px;
+    margin-top: 45px;
+    width: 50vw;
+    font-family: 'Klee One', cursive;
+    font-size: 20px;
+  }
+
+  
+  @media  screen and (max-width:768px){
+    #about-us{
+      width: 100vw;
+      height: auto;
+
+    }
+
+     .whatIsOdosamu1>p{
+      font-size: 10px;
+      width: 100vw;
+      height: auto;
+      margin-bottom: 20px;
+     }
+
+     .whatIsOdosamu1>p>br{
+      display: none;
+     }
+
+     .whatIsOdosamu1>img{
+      width: 80vw;
+      margin: auto;
+
+     }
+
+     .whatIsOdosamu2>img{
+      display: none;
+     }
+
+     .whatIsOdosamu2>p{
+      font-size: 10px;
+      margin: auto;
+      margin-top: 10px;
+      width: 80vw;
+      height: auto;
+     }
+
+     .whatIsOdosamu2>p>br{
+      display: none;
+     }
+     .whatIsOdosamu1{
+      flex-direction: column;
+     }
+     .whatIsOdosamu2{
+      flex-direction: column;
+     }
+     
+     .contents{
+      flex-direction: column;
+     }
+  
+  }
+  
+
+
+  #introduce{
+    width: 100vw;
+    height: 789px;
+  }
+
+  #activity{
+    background-color: #fff;
+    width: 100vw;
+    height: 719px;
+  }
+
+  #performance{
+    background-color: #fff;
+    width: 100vw;
+    height: 719px;
+  }
+
+  #information{
+    background-color: #fff;
+    width: 100vw;
+    height: auto;
+  }
+
+  .elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .element-content{
+    margin:80px auto;
+  }
+
+  .elements>li{
+    text-align: center;
+  }
+  .elements>li>img{
+    height: 275px;
+    width: auto;
+  }
+  .elements>li>a>span>img{
+    height: 275px;
+    width: auto;
+  }
+  .elements>li>p{
+    margin-top: 20px;
+    font-size: 26px;
+    color:black
+  text-align:center;
+  padding: 20px 0;
+  text-decoration:underline;
+  text-decoration-color: #a44358
+
+  }
+
+  .explanation span{
+    background: linear-gradient(transparent 60%, #FFF 60%);
+    border-radius: 80% 50% 60% 5%/80% 75% 15% 75%;
+  }
+
+  @media  screen and (max-width:768px){
+   .elements{
+    flex-direction: column;
+   }
+
+   .elements>li>a>span>img{
+    width: 80vw;
+    height: auto;
+   }
+
+   #introduce{
+    height: auto;
+   }
+
+   #activity{
+    height: auto;
+   }
+
+   #performance{
+    height: auto;
+   }
+
+   #information{
+    height: auto;
+   }
+  }
+
+ footer{
+    height: 120px;
+    width: 100%;
+    background-color:black;
+    display: flex; align-items: flex-end;
+    justify-content: center;
+}
+
+
+.footer-left{
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.footer-left>ul{
+    justify-content: center;
+}
+
+section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}

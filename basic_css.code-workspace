@@ -1,0 +1,92 @@
+{
+	"folders": [
+		{
+			"name": "basic_css",
+			"path": "../html/basic_css"
+		},
+		{
+			"name": "practice_css",
+			"path": "../html/practice_css"
+		},
+		{
+			"name": "practice",
+			"path": "../html/practice"
+		},
+		{
+			"name": "padding_margin",
+			"path": "../html/padding_margin"
+		},
+		{
+			"name": "frexbox_practice",
+			"path": "../html/frexbox_practice"
+		},
+		{
+			"name": "position",
+			"path": "../html/position"
+		},
+		{
+			"name": "responsive-practice",
+			"path": "../html/responsive-practice"
+		},
+		{
+			"name": "animation",
+			"path": "../html/animation"
+		},
+		{
+			"name": "fontawesome]",
+			"path": "../html/fontawesome]"
+		},
+		{
+			"name": "youtube_googlemap",
+			"path": "../html/youtube_googlemap"
+		},
+		{
+			"name": "practice1_html",
+			"path": "../../Downloads/practice1_html"
+		},
+		{
+			"name": "practice2_html",
+			"path": "../../Downloads/practice2_html"
+		},
+		{
+			"name": "practice3_html",
+			"path": "../../Downloads/practice3_html"
+		},
+		{
+			"name": "practice4_html",
+			"path": "../../Downloads/practice4_html"
+		},
+		{
+			"name": "practice5_html",
+			"path": "../../Downloads/practice5_html"
+		},
+		{
+			"name": "practice2_javascript",
+			"path": "../../Downloads/practice2_javascript"
+		},
+		{
+			"name": "JS",
+			"path": "../JS"
+		},
+		{
+			"name": "website_shinkan",
+			"path": "."
+		},
+		{
+			"name": "welcome_sodatech",
+			"path": "../html/welcome_sodatech"
+		},
+		{
+			"path": "../jquery"
+		},
+		{
+			"path": "../../Downloads/js_todo"
+		},
+		{
+			"path": "../../Downloads/sodatech"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "website_shinkan"
+	}
+}

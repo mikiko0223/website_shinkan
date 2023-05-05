@@ -1,0 +1,117 @@
+.menu-contents{
+    display: flex;
+    list-style: none;
+}
+
+.menu-contents li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-contents li{
+    margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-1 中心から外に線が伸びる（下部）
+===================================*/
+
+.menu-contents li a{
+    /*線の基点とするためrelativeを指定*/
+	position: relative;
+}
+
+.menu-contents li.current a,
+.menu-contents li a:hover{
+	color:white;
+}
+
+.menu-contents li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:red;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.menu-contents li.current a::after,
+.menu-contents li a:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+.element-img{
+	transform: scale(1);
+	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+ a:hover .element-img {/*hoverした時の変化*/
+	transform: scale(1.2);/*拡大の値を変更したい場合はこの数値を変更*/
+}
+
+/*　画像のマスク　*/
+
+.mask{
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+@media screen and (max-width:768px){
+    .current{
+        display: none;
+    }
+    .menu-contents{
+        display: none;
+    }
+}
+
+.category>ul>li a{
+    /*線の基点とするためrelativeを指定*/
+	position: relative;
+}
+
+.category li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-contents li{
+    margin-bottom:20px;
+}
+
+.category li a:hover{
+	color:black;
+}
+
+.category>ul>li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:red;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.category li a:hover::after {
+    transform: scale(1, 1);}/*X方向にスケール拡大*/
